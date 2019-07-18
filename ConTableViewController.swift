@@ -8,8 +8,28 @@
 
 import UIKit
 
+
+
+
 class ConTableViewController: UITableViewController {
 
+    
+    
+    
+    func createCon () -> [ConList] {
+        let terracycle = ConList()
+        terracycle.name = "Terracycle"
+        
+        let lush = ConList()
+        lush.name = "Lush"
+        
+        let mac = ConList()
+        mac.name = "Mac Cosmetics"
+        
+        return [terracycle, lush, ]
+    }
+        
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,12 +44,12 @@ class ConTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 8
     }
 
     /*
